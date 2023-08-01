@@ -1,11 +1,11 @@
 .circle{
-    background-color:black;
+    background  :linear-gradient(orangered,white,green);
     width:500px;
     height: 500px;
     border-radius: 50%;
     border: 1px splid solid;
     position: relative;
-
+    margin: auto;
 }
 .line {
 height: 2px;
@@ -54,174 +54,51 @@ top: 49%;
     background-color: #fff;
    
 }
+.dot
+{
+    position: absolute;
+    bottom: -8px;
+    animation: rotate 5s linear infinite;
+}
 .dot1
 {
     position: absolute;
-    bottom: -8px;
-    animation: rotate 8s linear infinite;
+    bottom: -10px;
+    right: 0px;
+    animation: robin 5s linear infinite;
 }
-.dot2
-{
-    position: absolute;
-    bottom: -8px;
-    animation: rotate1 8s linear infinite;
-}
-.dot3
-{
-    position: absolute;
-    bottom: -8px;
-    animation: rotate2 8s linear infinite;
-}
-.dot4
-{
-    position: absolute;
-    bottom: -8px;
-    animation: rotate3 8s linear infinite;
-}
-.dot5
-{
-    position: absolute;
-    bottom: -8px;
-    animation: rotate4 8s linear infinite;
-}
-.dot6
-{
-    position: absolute;
-    bottom: -8px;
-    animation: rotate5 8s linear infinite;
-}
-.dot7
-{
-    position: absolute;
-    bottom: -8px;
-    animation: rotate6 8s linear infinite;
-}
-.dot8
-{
-    position: absolute;
-    bottom: -8px;
-    animation: rotate7 8s linear infinite;
-}
+
 
 @keyframes rotate
 {
     0%{
         left:0px;
+        background-color: orangered;
     }
     
-    20%{
-        left: 480px;
+    50% ,70%{
+        left: 200px;
+        background-color: blue;
     }
     100%{
         left: 0px;
+        background-color: orangered;
     }
 }
-@keyframes rotate1
+@keyframes robin
 {
-    0% {
-        left:0px;
-    }
-    30%{
-        left: 480px;
-    }
     100%{
-        left: 0%;
-    }
-}
-@keyframes rotate2
-{
-    0%{
-        left:0px;
-    }
-    40%{
-        left: 480px;
-    }
-    100%{
-        left: 0%;
-    }
-}
-@keyframes rotate3
-{
-    0%{
-        left:0px;
-    }
-    50%{
-        left: 480px;
-    }
-    100%{
-        left: 0%;
-    }
-}
-@keyframes rotate4
-{
-    0% {
-        left:0px;
-    }
-    60%{
-        left: 480px;
-    }
-    100%{
-        left: 0%;
-    }
-}
-@keyframes rotate5
-{
-    0% {
-        left:0px;
-    }
-    80%{
-        left: 480px;
-    }
-     100%{
-        left: 0%;
-    }
-}
-@keyframes rotate6
-{
-    0% ,25%{
-        left:0px;
-    }
-    90%{
-        left: 480px;
-    }
-    100%{
-        left: 0%;
-    }
-}
-@keyframes rotate7
-{
-    0% {
-        left:0px;
-    }
-    50%{
-        left: 480px;
-    }
-     100%{
-        left: 0%;
-    }
-}
-/* @keyframes rotate
-{
-    0%{
-        left:0px;
+        right:0px;
+        background-color: green;
     }
     
-    40%{
-        left: 480px;
+    50% ,70%{
+        right: 200px;
+        background-color: rgb(0, 0, 255);
     }
-    75%{
-        left: 0px;
+    0%{
+        right: 0px;
+        background-color: green;
     }
-} */
-/* @keyframes rotate1
-{
-    0% ,5%{
-        left:0px;
-    }
-    50%{
-        left: 480px;
-    }
-    100%, 70%{
-        left: 0%;
-    }
-} */
+}
+
